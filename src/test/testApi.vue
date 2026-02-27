@@ -1,9 +1,9 @@
 <!--
  * @Author: ZhongJunWei
  * @Date: 2022/07/05 09:37
- * @LastEditTime: 2023-03-15 13:08:18
- * @LastEditors: zhongjunwei zhongjunwei@wisight.cn
- * @FilePath: \vue3-vite2-h5-template-ynzy\src\test\testApi.vue
+ * @LastEditTime: 2026/02/27
+ * @LastEditors: Janaeiw
+ * @FilePath: /vue3-vite2-h5-template-y/src/test/testApi.vue
  * @Description: '测试api代理调试'
 -->
 
@@ -22,12 +22,14 @@ interface FormsType {
 	account?: string
 	password?: string
 	type?: string
+	captcha?: string
 }
 
 const forms: FormsType = {
-	account: 'frontend@cpapi.com',
+	account: 'zhongjunwei@cpapi.com',
 	password: genUUID(8) + window.btoa('Password123').split('').reverse().join(''),
-	type: 'PASSWORD'
+	type: 'PASSWORD',
+	captcha: '1234'
 }
 
 const handleLogin = () => {
