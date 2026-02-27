@@ -1,9 +1,9 @@
 <!--
  * @Author: zhongjunwei zhongjunwei@wisight.cn
  * @Date: 2023-03-14 19:50:46
- * @LastEditors: zhongjunwei zhongjunwei@wisight.cn
- * @LastEditTime: 2023-03-15 13:08:33
- * @FilePath: /vue3-vite2-h5-template-ynzy/src/views/tabBar/About.vue
+ * @LastEditors: Janaeiw
+ * @LastEditTime: 2026/02/27
+ * @FilePath: /vue3-vite2-h5-template-y/src/views/tabBar/About.vue
  * @Description: 这是默认设置,请设置`customMade`, 打开koroFileHeader查看配置 进行设置: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE
 -->
 <!-- about -->
@@ -43,9 +43,10 @@ onMounted(async () => {
 			auth.saveUserInfo(res.result)
 		} else {
 			const data = {
-				account: 'frontend@cpapi.com',
+				account: 'zhongjunwei@cpapi.com',
 				password: genUUID(8) + window.btoa('Password123').split('').reverse().join(''),
-				type: 'PASSWORD'
+				type: 'PASSWORD',
+				captcha: '1234'
 			}
 			login(data)
 				.then((res: any) => {
@@ -54,7 +55,7 @@ onMounted(async () => {
 						auth.saveUserInfo({
 							author: 'Janaeiw',
 							avatar: '/vue3-vite2-h5-template-ynzy/images/avatar.jpg',
-							projectAddress: 'https://github.com/Janaeiw/vue3-vite2-h5-template-ynzy'
+							projectAddress: 'https://github.com/Janaeiw/vue3-vite2-h5-template-y'
 						})
 					}
 				})
