@@ -17,9 +17,9 @@
 			<p class="label">微信授权code码:</p>
 			<p>{{ auth.code || '请使用微信浏览器查看' }}</p>
 		</div>
-		<div class="item url" @click="jumpUrl">
+		<div class="item url">
 			<p class="label">项目地址:</p>
-			<p>{{ auth.userInfo.projectAddress }}</p>
+			<a :href="auth.userInfo.projectAddress" target="_blank">{{ auth.userInfo.projectAddress }}</a>
 		</div>
 	</div>
 </template>
@@ -30,10 +30,6 @@ import { useAuthStore } from '@/store/auth'
 import { Toast } from 'vant'
 
 const auth: any = useAuthStore()
-
-const jumpUrl = () => {
-	window.location.href = `${auth.userInfo.projectAddress}`
-}
 
 onMounted(async () => {
 	try {
