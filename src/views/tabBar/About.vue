@@ -54,7 +54,7 @@ onMounted(async () => {
 						Toast.success('登录成功')
 						auth.saveUserInfo({
 							author: 'Janaeiw',
-							avatar: '/vue3-vite2-h5-template-ynzy/images/avatar.jpg',
+							avatar: '/vue3-vite2-h5-template-y/images/avatar.jpg',
 							projectAddress: 'https://github.com/Janaeiw/vue3-vite2-h5-template-y'
 						})
 					}
