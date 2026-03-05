@@ -310,8 +310,8 @@ css: {
     preprocessorOptions: {
       scss: {
         additionalData: `
-          @import "@/styles/mixin.scss";
-          @import "@/styles/variables.scss";
+          @use "@/styles/mixin.scss";
+          @use "@/styles/variables.scss";
           `,
       },
     },

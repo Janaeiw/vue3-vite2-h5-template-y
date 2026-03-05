@@ -37,8 +37,8 @@ export default defineConfig(({ command, mode }: ConfigEnv) => {
 				scss: {
 					charset: false, // 避免出现: build时的 @charset 必须在第一行的警告
 					additionalData: `
-						@import "@/styles/mixin.scss";
-						@import "@/styles/variables.scss";
+						@use "@/styles/mixin.scss" as *;
+						@use "@/styles/variables.scss" as *;
 					`
 				}
 			}
