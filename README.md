@@ -1282,10 +1282,6 @@ yarn add weixin-js-sdk
 
 - router.ts
 此处的jssdk配置仅供演示，正常业务逻辑需要配合后端去写
-```ts
-
-```
-
 
 ```ts
 import { defineStore } from 'pinia'
@@ -1335,9 +1331,6 @@ hooks/useWxJsSdk.ts
 
 每个页面使用jssdk，都需要调用一次useWxJsSdk,然后再使用其他封装的函数
 
-调用：
-
-```ts
 ```
 [▲ 回顶部](#top)
 
