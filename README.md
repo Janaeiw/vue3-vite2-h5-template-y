@@ -1331,7 +1331,6 @@ hooks/useWxJsSdk.ts
 
 每个页面使用jssdk，都需要调用一次useWxJsSdk,然后再使用其他封装的函数
 
-```
 [▲ 回顶部](#top)
 
 ## <span id="prettier">✅ Eslint + Prettier 统一开发规范 </span>
